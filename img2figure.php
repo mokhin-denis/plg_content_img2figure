@@ -19,6 +19,11 @@ jimport('joomla.plugin.plugin');
 class plgContentImg2figure extends JPlugin
 {
 	function onBeforeRender() {
+        $app = JFactory::getApplication();
+
+        if(!$app->isSite())
+            return;
+        
         JHtml::_('jquery.framework');        
         $class = $this->params->get('class');
         $transfer_classes = $this->params->get('transfer_classes',0);

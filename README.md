@@ -30,5 +30,14 @@ Plugin can remove all classes from `<img/>` and put them to `<figure/>`.
 ## Authors ##
 * [Denis Mokhin](//github.com/mokhin-denis)
 
+## Supported languages ##
+You can improve current translation or add new languages. Please visit [transifex.com](//www.transifex.com/mokhin/img2figure)
+
 ## License ##
 This project is licensed under the GNU/GPL v3 license. Please visit http://www.gnu.org/licenses/gpl-3.0.html
+
+## TODO ##
+What I want to do in future:
+* *Except class* support
+* Specifying the additional class for `<figure/>`
+* Specifying the additional class for `<figcaption/>`
