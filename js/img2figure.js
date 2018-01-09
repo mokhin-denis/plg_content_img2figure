@@ -1,7 +1,7 @@
 /**
  * @package		Mokhin BS
  * @subpackage	Plugins
- * @copyright	Denis Mokhin - All rights reserved.
+ * @copyright	(C) 2017-2018 Denis Mokhin - All rights reserved.
  * @author		Denis Mokhin
  * @link		http://mokhin-tech.ru
  * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html 
