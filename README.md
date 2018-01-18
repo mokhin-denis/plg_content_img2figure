@@ -35,4 +35,4 @@ You may setup class suffixes for new `<figure/>` and `<figcaption/>` elements. T
 You can improve current translation or add new languages. Please visit [transifex.com](//www.transifex.com/mokhin/img2figure)
 
 ## License ##
-This project is licensed under the GNU/GPL v2 or later; please visit http://www.gnu.org/licenses/old-licenses/gpl-2.0.html or see [LICENSE.txt]
+This project is licensed under the GNU/GPL v2 or later; please visit http://www.gnu.org/licenses/old-licenses/gpl-2.0.html or see [LICENSE.txt](LICENSE.txt)
