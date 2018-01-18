@@ -5,7 +5,7 @@
  * @copyright	(C) 2017-2018 Denis Mokhin - All rights reserved.
  * @author		Denis Mokhin
  * @link		http://mokhin-tech.ru
- * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * @license     GNU/GPL v2 or later; please visit http://www.gnu.org/licenses/old-licenses/gpl-2.0.html or see LICENSE.txt
 */
 
 // no direct access
@@ -25,14 +25,22 @@ class plgContentImg2figure extends JPlugin
             return;
         
         JHtml::_('jquery.framework');        
+        $wrap_for = $this->params->get('wrap_for', 2);
         $class = $this->params->get('class');
-        $transfer_classes = $this->params->get('transfer_classes',0);
+        $figure_class_sfx = $this->params->get('figure_class_sfx');
+        $figcaption_class_sfx = $this->params->get('figcaption_class_sfx');
+        $transfer_classes = $this->params->get('transfer_classes', 0);
         $transfer_classes_boolean = ($transfer_classes == 0)?'false':'true';
 		$pluginUrl = JURI::base(true) . '/plugins/content/img2figure/';
 		JFactory::getDocument()->addScript($pluginUrl.'js/img2figure.js');
 		JFactory::getDocument()->addScriptDeclaration("
-            var img2figureClass = '$class';
-            var trnsfrClasses = $transfer_classes_boolean;
+            var wrapImages2FiguresParams = {
+                img2figureClass: '$class',
+                trnsfrClasses: $transfer_classes_boolean,
+                wrapForParam: $wrap_for,
+                figureClassSfx: '$figure_class_sfx',
+                figcaptionClassSfx: '$figcaption_class_sfx'
+            };
 			jQuery(document).ready(wrapImages2Figures);
 		");
     }

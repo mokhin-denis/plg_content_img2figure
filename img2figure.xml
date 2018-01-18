@@ -6,10 +6,11 @@
 	<authorEmail>denis@mokhin-tech.ru</authorEmail>
 	<authorUrl>http://mokhin-tec.ru</authorUrl>
 	<copyright>Denis Mokhin - All rights reserved.</copyright>
-    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>	
-	<version>0.1</version>
+    <license>GNU/GPL v2 or later; please visit http://www.gnu.org/licenses/old-licenses/gpl-2.0.html or see LICENSE.txt</license>
+	<version>0.2</version>
     <!-- Changes: -->
     <!-- 0.1 Joomla 3.0 and Botstrap 4 compatible -->
+    <!-- 0.2 Support 'except class' and sfxs for figure an figcaption tags -->
     <description>PLG_CONTENT_IMG2FIGURE_XML_DESCRIPTION</description>
     <files>
         <filename plugin="img2figure">img2figure.php</filename>
@@ -21,12 +22,12 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
-                <field name="wrap_for" type="list" default="0" label="PLG_CONTENT_IMG2FIGURE_FOR_LBL" description="PLG_CONTENT_IMG2FIGURE_FOR_DESC">
+                <field name="wrap_for" type="list" default="2" label="PLG_CONTENT_IMG2FIGURE_FOR_LBL" description="PLG_CONTENT_IMG2FIGURE_FOR_DESC">
                     <option value="0">PLG_CONTENT_IMG2FIGURE_ONLY_CLASS</option>
                     <option value="1">PLG_CONTENT_IMG2FIGURE_EXCEPT_CLASS</option>
                     <option value="2">PLG_CONTENT_IMG2FIGURE_ALL_IMAGES</option>
                 </field>
-                <field name="class" type="text" default="" label="PLG_CONTENT_IMG2FIGURE_CLASS_LBL" description="PLG_CONTENT_IMG2FIGURE_CLASS_DESC" />                
+                <field name="class" type="text" default="" label="PLG_CONTENT_IMG2FIGURE_CLASS_LBL" description="PLG_CONTENT_IMG2FIGURE_CLASS_DESC" />
                 <field
 					name="transfer_classes"
 					type="radio"
@@ -37,7 +38,21 @@
 					>
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
-				</field>
+				</field>                
+                <field
+					name="figure_class_sfx"
+					type="textarea"
+					label="PLG_CONTENT_IMG2FIGURE_FIGURE_CLASS_SFX_LBL"
+					description="PLG_CONTENT_IMG2FIGURE_FIGURE_CLASS_SFX_DESC"
+					rows="3"
+				/>
+                <field
+					name="figcaption_class_sfx"
+					type="textarea"
+					label="PLG_CONTENT_IMG2FIGURE_FIGCAPTION_CLASS_SFX_LBL"
+					description="PLG_CONTENT_IMG2FIGURE_FIGCAPTION_CLASS_SFX_DESC"
+					rows="3"
+				/>                
             </fieldset>
         </fields>
 	</config>
