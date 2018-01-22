@@ -32,7 +32,7 @@ class plgContentImg2figure extends JPlugin
         $transfer_classes = $this->params->get('transfer_classes', 0);
         $transfer_classes_boolean = ($transfer_classes == 0)?'false':'true';
 		$pluginUrl = JURI::base(true) . '/plugins/content/img2figure/';
-		JFactory::getDocument()->addScript($pluginUrl.'js/img2figure.js');
+		JFactory::getDocument()->addScript($pluginUrl.'js/img2figure.min.js');
 		JFactory::getDocument()->addScriptDeclaration("
             var wrapImages2FiguresParams = {
                 img2figureClass: '$class',
