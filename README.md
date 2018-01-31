@@ -1,4 +1,4 @@
-# Img2Figure ![](https://img.shields.io/badge/joomla-3.x-yellow.svg?style=plastic)  ![](https://img.shields.io/badge/bootstrap-3-563d7c.svg?style=plastic) #
+# Img2Figure ![](https://img.shields.io/badge/joomla-3.x-yellow.svg?style=plastic)  ![](https://img.shields.io/badge/bootstrap-4-563d7c.svg?style=plastic) #
 What if you need one, or some, or all your images to be part of `<figure>`? With this plugin it will be done automatic.
 
 ## Description ##
@@ -6,7 +6,7 @@ Just put your image with `alt` attribute to your material, module or wherever yo
 
 ## Requirements ##
 ### Joomla ###
-It works with Joomla 3.0. I really dont know, does it work with earlier versions of Joomla or not...
+It works with Joomla 3.x. I really dont know, does it work with earlier versions of Joomla or not...
 ### Bootstrap ###
 This plugin is Bootstrap-friendly
 ### Bootstrap plugin for Joomla ###
