@@ -29,6 +29,7 @@ class plgContentImg2figure extends JPlugin
         $class = $this->params->get('class');
         $figure_class_sfx = $this->params->get('figure_class_sfx');
         $figcaption_class_sfx = $this->params->get('figcaption_class_sfx');
+        $image_class_sfx = $this->params->get('img_class_sfx');
         $transfer_classes = $this->params->get('transfer_classes', 0);
         $transfer_classes_boolean = ($transfer_classes == 0)?'false':'true';
 		$pluginUrl = JURI::base(true) . '/plugins/content/img2figure/';
@@ -39,7 +40,8 @@ class plgContentImg2figure extends JPlugin
                 trnsfrClasses: $transfer_classes_boolean,
                 wrapForParam: $wrap_for,
                 figureClassSfx: '$figure_class_sfx',
-                figcaptionClassSfx: '$figcaption_class_sfx'
+                figcaptionClassSfx: '$figcaption_class_sfx',
+                imgClassSfx: '$image_class_sfx'
             };
 			jQuery(document).ready(wrapImages2Figures);
 		");

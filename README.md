@@ -26,7 +26,9 @@ Just install the plugin as any other Joomla extension. Activate it, and define w
 Plugin can remove all classes from `<img/>` and put them to `<figure/>`.
 
 #### Class Suffixes ####
-You may setup class suffixes for new `<figure/>` and `<figcaption/>` elements. This allows for individual element styling
+You may setup class suffixes for new `<figure/>` and `<figcaption/>` elements. This allows for individual element styling.
+
+You may also setup class suffixes for `<img/>`. They will be added to `<img/>` element after the wrapping.
 
 ## Authors ##
 * [Denis Mokhin](//github.com/mokhin-denis)

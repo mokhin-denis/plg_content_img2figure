@@ -7,12 +7,13 @@
 	<authorUrl>http://mokhin-tech.ru</authorUrl>
 	<copyright>Denis Mokhin - All rights reserved.</copyright>
     <license>GNU/GPL v2 or later; please visit http://www.gnu.org/licenses/old-licenses/gpl-2.0.html or see LICENSE.txt</license>
-	<version>0.4</version>
+	<version>0.5</version>
     <!-- Changes: -->
     <!-- 0.1 Joomla 3.0 and Botstrap 4 compatible -->
     <!-- 0.2 Support 'except class' and sfxs for figure an figcaption tags -->
     <!-- 0.3 Compressed JS -->
     <!-- 0.4 Little fix xml and readme -->
+    <!-- 0.5 Added class suffix for <img/> element  -->
     <description>PLG_CONTENT_IMG2FIGURE_XML_DESCRIPTION</description>
     <files>
         <filename plugin="img2figure">img2figure.php</filename>
@@ -53,6 +54,13 @@
 					type="textarea"
 					label="PLG_CONTENT_IMG2FIGURE_FIGCAPTION_CLASS_SFX_LBL"
 					description="PLG_CONTENT_IMG2FIGURE_FIGCAPTION_CLASS_SFX_DESC"
+					rows="3"
+				/>
+                <field
+					name="img_class_sfx"
+					type="textarea"
+					label="PLG_CONTENT_IMG2FIGURE_IMAGE_CLASS_SFX_LBL"
+					description="PLG_CONTENT_IMG2FIGURE_IMAGE_CLASS_SFX_DESC"
 					rows="3"
 				/>                
             </fieldset>

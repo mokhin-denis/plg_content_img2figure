@@ -15,6 +15,7 @@ function wrapImages2Figures() {
     var wrapForParam = wrapImages2FiguresParams.wrapForParam;
     var figureClassSfx = 'img2figure'+wrapImages2FiguresParams.figureClassSfx;
     var figcaptionClassSfx = 'img2figure'+wrapImages2FiguresParams.figcaptionClassSfx;
+    var imgClassSfx = wrapImages2FiguresParams.imgClassSfx;
     ////////////
     
     var sFind = (img2figureClass)?'.'+img2figureClass:'img';
@@ -36,7 +37,9 @@ function wrapImages2Figures() {
             return objRes;
         } ).after(jQuery("<figcaption/>").addClass(figcaptionClassSfx).html(txtAlt));
         if(trnsfrClasses)
-            jQuery(this).toggleClass(txtClasses);        
+            jQuery(this).toggleClass(txtClasses);
+        if(imgClassSfx)
+            jQuery(this).addClass(imgClassSfx);
     };
     
     //switch is on what objects we do fAction
